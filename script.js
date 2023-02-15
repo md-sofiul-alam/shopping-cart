@@ -36,10 +36,10 @@ function priceCartRemove(removeCartId, existingCartId, id3, id4){
     totalPrice.innerText = removeCartId + casePrice;
 }
 function removeCart(id){
-    const removeCart = document.getElementById(id);
+    const removedCart = document.getElementById(id);
     const totlaArea= document.getElementById('total-area');
     totlaArea.remove();
-    removeCart.remove();
+    removedCart.remove();
 }
 
 document.getElementById('btn-phone-decrease').addEventListener('click', function () {
