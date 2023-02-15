@@ -18,7 +18,7 @@
          <h2>My shopping cart</h2>
          <div class="cart">
             <div class="col-md-12 col-lg-10 mx-auto">
-               <div class="cart-item">
+               <div class="cart-item" id="phone-cart">
                   <div class="row">
                      <div class="col-md-7 center-item">
                         <img src="images/product-1.png" alt="">
@@ -27,16 +27,16 @@
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
                            <button class="btn btn-default" id="btn-phone-decrease"><i class="fas fa-minus"></i></button>
-                           <input type="number" min="1" class="form-control text-center" value="1" id="phone-qty-field">
+                           <input type="text" class="form-control text-center" value="1" id="phone-qty-field">
                            <button class="btn btn-default" id="btn-phone-increase"><i class="fas fa-plus"></i></button>
                         </div>
                         <h5>$ <span id="phone-price-total">1219</span></h5>
-                        <img src="images/remove.png" alt="" class="remove-item">
+                        <img src="images/remove.png" alt="" class="remove-item" id="phone-remove">
                      </div>
                   </div>
                </div>
 
-               <div class="cart-item">
+               <div class="cart-item" id="case-cart">
                   <div class="row">
                      <div class="col-md-7 center-item mx-auto">
                         <img src="images/product-2.png" alt="">
@@ -44,13 +44,13 @@
                      </div>
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
-                           <button class="btn btn-default"><i class="fas fa-minus" id="btn-case-decrease"></i></button>
-                           <input id="case-count" type="number" min="1" class="form-control text-center" value="1">
+                           <button class="btn btn-default" id="btn-case-decrease"><i class="fas fa-minus"></i></button>
+                           <input id="case-count" type="text" class="form-control text-center" value="1">
                            <button id="btn-case-increase" class="btn btn-default"><i class="fas fa-plus"></i></button>
 
                         </div>
                         <h5 >$ <span id="case-price-total">59</span></h5>
-                        <img src="images/remove.png" alt="" class="remove-item">
+                        <img src="images/remove.png" alt="" class="remove-item" id="case-remove">
                      </div>
                   </div>
                </div>
