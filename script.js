@@ -36,8 +36,10 @@ function priceCartRemove(removeCartId, existingCartId, id3, id4){
     totalPrice.innerText = removeCartId + casePrice;
 }
 function removeCart(id){
-    const element = document.getElementById(id);
-    element.remove();
+    const removeCart = document.getElementById(id);
+    const totlaArea= document.getElementById('total-area');
+    totlaArea.remove();
+    removeCart.remove();
 }
 
 document.getElementById('btn-phone-decrease').addEventListener('click', function () {
@@ -53,7 +55,6 @@ document.getElementById('btn-phone-increase').addEventListener('click', function
 })
 
 document.getElementById('phone-remove').addEventListener('click', function(){
-    priceCartRemove('phone-price-total','case-price-total','sub-total', 'total' )
     removeCart('phone-cart');
 })
 
@@ -69,6 +70,5 @@ document.getElementById('btn-case-increase').addEventListener('click', function 
     totalCost('phone-price-total', 'case-price-total', 'sub-total', 'total');
 })
 document.getElementById('case-remove').addEventListener('click', function(){
-    priceCartRemove('case-price-total','phone-price-total','sub-total', 'total' )
     removeCart('case-cart');
 })
