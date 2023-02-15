@@ -26,15 +26,6 @@ function totalCost(id1, id2, id3, id4) {
     totalPrice.innerText = phonePrice + casePrice;
 }
 
-function priceCartRemove(removeCartId, existingCartId, id3, id4){
-    removeCartId=0;
-    const casePriceString = document.getElementById(existingCartId);
-    const casePrice = parseInt(casePriceString.innerText);
-    const subTotalPrice = document.getElementById(id3);
-    const totalPrice = document.getElementById(id4);
-    subTotalPrice.innerText = removeCartId + casePrice;
-    totalPrice.innerText = removeCartId + casePrice;
-}
 function removeCart(id){
     const removedCart = document.getElementById(id);
     const totlaArea= document.getElementById('total-area');
